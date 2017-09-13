@@ -1,0 +1,9 @@
+version: '3'
+services:
+  small_light:
+    image: diverse/ngx_small_light
+    ports:
+      - 80:80
+    volumes:
+      - ./smalllight.conf:/etc/ngx_small_light/conf.d/default.conf
+      - ./public:/usr/share/ngx_small_light/public
